@@ -1,4 +1,4 @@
-FROM openjdk:14-jdk-alpine
+FROM docker.io/openjdk:14-jdk-alpine
 ADD ./target/eurekaServer.jar /opt/app/eurekaServer.jar
 WORKDIR /opt/app/
 ENV PATH="${PATH}:${JAVA_HOME}/bin"
